@@ -161,8 +161,11 @@ document.getElementById('launchButton').addEventListener('click', function () {
     var launchButton = document.getElementById('launchButton');
     launchButton.style.display = 'none'; // Hide the launch button
 
-    var hiddenImage = document.getElementById('hiddenImage');
-    hiddenImage.style.display = 'block'; // Show the hidden image
+    var hiddenVideo = document.getElementById('hiddenVideo');
+    const autoplayVideo = document.getElementById('autoplayVideo');
+
+    hiddenVideo.style.display = 'block'; // Show the hidden video
+    autoplayVideo.play();
 
     var canvas = document.getElementById('confetti-canvas');
     canvas.width = window.innerWidth;
