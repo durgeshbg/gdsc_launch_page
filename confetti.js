@@ -168,5 +168,6 @@ document.getElementById('launchButton').addEventListener('click', function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    toggleConfetti();
+    startConfetti();
+    setTimeout(stopConfetti, 2000);
 });
